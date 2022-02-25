@@ -5,11 +5,13 @@ class WorddleNotifier extends ChangeNotifier {
   WorddleNotifier() {
     generateRandomWord();
   }
+
   TextEditingController wordController = TextEditingController();
   String word = "";
   List list = [];
   bool hint = false;
   List wordList = [];
+
   void changeHint(bool hintt) {
     hint = hintt;
     notifyListeners();
@@ -37,7 +39,9 @@ class WorddleNotifier extends ChangeNotifier {
   }
 
   void remove() {
-    wordList.removeLast();
+    if (wordList.isNotEmpty) {
+      wordList.removeLast();
+    }
     notifyListeners();
   }
 

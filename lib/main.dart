@@ -25,9 +25,35 @@ class WorddleApp extends StatelessWidget {
         themeMode: ThemeMode.system,
         theme: ThemeData(primaryColor: Colors.teal, primarySwatch: Colors.teal),
         debugShowCheckedModeBanner: false,
-        title: "Worddle App",
+        title: "Worddle",
         home: const HomePage(),
       ),
     );
   }
 }
+/*
+
+class Splash extends StatelessWidget {
+  const Splash({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Material(
+      child: Container(
+        height: MediaQuery.of(context).size.height,
+        width: MediaQuery.of(context).size.width,
+        color: Colors.teal,
+        child: Center(
+            child: Text(
+          "W",
+          style: GoogleFonts.dancingScript(
+             // fontStyle: FontStyle.normal,
+              color: Colors.white,
+              fontSize: 200,
+              fontWeight: FontWeight.w900,),
+        )),
+      ),
+    );
+  }
+}
+*/
