@@ -3,7 +3,7 @@
 A new Flutter application.
 
 ## Getting Started
-![plot](https://github.com/hemantjamdev/worddle/blob/main/Screenshot_1645797130.png = 250x250)
+![plot](https://github.com/hemantjamdev/worddle/blob/main/Screenshot_1645797130.png | width=100)
 ![](https://github.com/hemantjamdev/worddle/blob/main/Screenshot_1645797130.png | width=100)
 ![](https://gyazo.com/eb5c5741b6a9a16c692170a41a49c858.png | width=100)
 This project is a starting point for a Flutter application.
