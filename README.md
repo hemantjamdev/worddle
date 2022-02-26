@@ -7,6 +7,7 @@ A new Flutter application.
 ![](https://github.com/hemantjamdev/worddle/blob/main/Screenshot_1645797130.png | width=100)
 ![](https://github.com/hemantjamdev/worddle/blob/main/Screenshot_1645797130.png | width=100)
 <img src="https://camo.githubusercontent.com/..." data-canonical-src="https://github.com/hemantjamdev/worddle/blob/main/Screenshot_1645797130.png" width="200" height="400" />
+<img src="https://github.com/hemantjamdev/worddle/blob/main/Screenshot_1645797130.png" width="100" height="100">
 This project is a starting point for a Flutter application.
 
 A few resources to get you started if this is your first Flutter project:
