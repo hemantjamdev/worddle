@@ -34,14 +34,16 @@ class _HomePageState extends State<HomePage> {
         }
       },
       child: Container(
-          padding: const EdgeInsets.symmetric(vertical: 5, horizontal: 8),
-          margin: const EdgeInsets.symmetric(vertical: 5, horizontal: 5),
+          padding: const EdgeInsets.symmetric(vertical: 0, horizontal: 8),
+          margin: const EdgeInsets.symmetric(vertical: 3, horizontal: 2),
           decoration: BoxDecoration(
             border: Border.all(color: Colors.teal),
           ),
-          child: Text(
-            text,
-            style: const TextStyle(fontWeight: FontWeight.bold),
+          child: Center(
+            child: Text(
+              text,
+              style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 24),
+            ),
           )),
     );
   }
@@ -98,8 +100,11 @@ class _HomePageState extends State<HomePage> {
               Center(
                 child: Visibility(
                   visible: notifier.hint,
-                  child:
-                      Text(notifier.word, style: const TextStyle(fontSize: 24)),
+                  child: Padding(
+                    padding: const EdgeInsets.only(bottom: 10),
+                    child: Text(notifier.word,
+                        style: const TextStyle(fontSize: 24)),
+                  ),
                 ),
               ),
               Stack(
@@ -160,33 +165,61 @@ class _HomePageState extends State<HomePage> {
                     /// first row of keyboard
                     SizedBox(
                       height: 40,
+                      child: Row(
+                        mainAxisSize: MainAxisSize.max,
+                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                        // scrollDirection: Axis.horizontal,
+                        //  shrinkWrap: true,
+                        children: firstRow.map((e) => customButton(e)).toList(),
+                      ),
+                    ),
+                    /*   SizedBox(
+                      height: 40,
                       child: ListView(
                         scrollDirection: Axis.horizontal,
                         shrinkWrap: true,
                         children: firstRow.map((e) => customButton(e)).toList(),
                       ),
-                    ),
+                    ),*/
 
                     /// second row of keyboard
                     SizedBox(
                       height: 40,
-                      child: ListView(
+                      child: Row(
+                        mainAxisSize: MainAxisSize.max,
+                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                        // scrollDirection: Axis.horizontal,
+                        //  shrinkWrap: true,
+                        children:
+                            secondRow.map((e) => customButton(e)).toList(),
+                      ),
+                      /* ListView(
                         scrollDirection: Axis.horizontal,
                         shrinkWrap: true,
                         children:
                             secondRow.map((e) => customButton(e)).toList(),
-                      ),
+                      ),*/
                     ),
 
                     /// third row of keyboard
                     SizedBox(
+                      height: 40,
+                      child: Row(
+                        mainAxisSize: MainAxisSize.max,
+                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                        // scrollDirection: Axis.horizontal,
+                        //  shrinkWrap: true,
+                        children: thirdRow.map((e) => customButton(e)).toList(),
+                      ),
+                    ),
+                    /* SizedBox(
                       height: 40,
                       child: ListView(
                         scrollDirection: Axis.horizontal,
                         shrinkWrap: true,
                         children: thirdRow.map((e) => customButton(e)).toList(),
                       ),
-                    ),
+                    ),*/
                   ],
                 ),
               ),
