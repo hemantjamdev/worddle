@@ -1,4 +1,3 @@
-import 'dart:developer';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:provider/provider.dart';
@@ -168,19 +167,9 @@ class _HomePageState extends State<HomePage> {
                       child: Row(
                         mainAxisSize: MainAxisSize.max,
                         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                        // scrollDirection: Axis.horizontal,
-                        //  shrinkWrap: true,
                         children: firstRow.map((e) => customButton(e)).toList(),
                       ),
                     ),
-                    /*   SizedBox(
-                      height: 40,
-                      child: ListView(
-                        scrollDirection: Axis.horizontal,
-                        shrinkWrap: true,
-                        children: firstRow.map((e) => customButton(e)).toList(),
-                      ),
-                    ),*/
 
                     /// second row of keyboard
                     SizedBox(
@@ -188,17 +177,9 @@ class _HomePageState extends State<HomePage> {
                       child: Row(
                         mainAxisSize: MainAxisSize.max,
                         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                        // scrollDirection: Axis.horizontal,
-                        //  shrinkWrap: true,
                         children:
                             secondRow.map((e) => customButton(e)).toList(),
                       ),
-                      /* ListView(
-                        scrollDirection: Axis.horizontal,
-                        shrinkWrap: true,
-                        children:
-                            secondRow.map((e) => customButton(e)).toList(),
-                      ),*/
                     ),
 
                     /// third row of keyboard
@@ -207,19 +188,9 @@ class _HomePageState extends State<HomePage> {
                       child: Row(
                         mainAxisSize: MainAxisSize.max,
                         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                        // scrollDirection: Axis.horizontal,
-                        //  shrinkWrap: true,
                         children: thirdRow.map((e) => customButton(e)).toList(),
                       ),
                     ),
-                    /* SizedBox(
-                      height: 40,
-                      child: ListView(
-                        scrollDirection: Axis.horizontal,
-                        shrinkWrap: true,
-                        children: thirdRow.map((e) => customButton(e)).toList(),
-                      ),
-                    ),*/
                   ],
                 ),
               ),
