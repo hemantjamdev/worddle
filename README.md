@@ -1,6 +1,7 @@
 # worddle
 
 A new Flutter application.
+![Screenshot_1652858446](https://user-images.githubusercontent.com/60656624/168980700-ccc4524d-3912-4132-9c32-eb261a193e8a.png)
 
 ## Getting Started
 
